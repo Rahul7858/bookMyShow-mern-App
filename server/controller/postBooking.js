@@ -7,7 +7,7 @@ const postBooking = async (req, res) => {
 
     // Check if the booking was successfully created.
     if (!booking) {
-      // If no booking is found, respond with a 404 error and a message.
+      // If no booking is found, respond with a 422 error and a message.
       return res
         .status(422)
         .json({ message: "Failed to create booking. Please try again later." });

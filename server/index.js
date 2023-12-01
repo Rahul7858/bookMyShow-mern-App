@@ -13,7 +13,7 @@ app.use(cors());
 //import routes
 const routes = require("./routes/bookingRoutes");
 
-//mount the todo API routes
+//mount the API routes
 app.use("/api", routes);
 
 //start server

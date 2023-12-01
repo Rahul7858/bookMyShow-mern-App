@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 
 require("dotenv").config();
 
+//.connect Method used to connect mongoDB server online.
 const dbConnect = async ()=>{
     mongoose.connect(process.env.DATABASE_URL, {
         useNewUrlParser: true,

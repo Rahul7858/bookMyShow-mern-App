@@ -3,7 +3,7 @@ const express = require("express");
 // Create a new router instance using the 'express.Router()' method.
 const router = express.Router();
 
-// Import the 'getBookings' function to handle POST requests for booking a movie.
+// Imports 'postBookings' and 'getLastBooking'.
 const  postBooking  = require("../controller/postBooking");
 const  getLastBooking  = require("../controller/getLastBooking");
 
